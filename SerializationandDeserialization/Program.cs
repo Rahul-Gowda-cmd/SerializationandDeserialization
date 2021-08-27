@@ -6,7 +6,13 @@ namespace SerializationandDeserialization
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BinarySerilaization objDesrialize = new BinarySerilaization();
+            objDesrialize.Serialization();
+            objDesrialize.DeSerialization();
+            JsonSerilization json = new JsonSerilization();
+            json.JsonSerilize();
+            JsonDeserealization deserealization = new JsonDeserealization();
+            deserealization.JsonDesrialize();
         }
     }
 }
